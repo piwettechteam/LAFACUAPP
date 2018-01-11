@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "47877815975",
+    "firebase_url": "https://univ-56ab9.firebaseio.com",
+    "project_id": "univ-56ab9",
+    "storage_bucket": "univ-56ab9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:47877815975:android:fa83a164f70e3cd8",
+        "android_client_info": {
+          "package_name": "com.piwet.technologies.lafacuapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "47877815975-5k2dvhpmro3s5ut53su9l3kculeok5va.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoKc9sZhz15aHLtqrikk1W8e2bOJ9eAe4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

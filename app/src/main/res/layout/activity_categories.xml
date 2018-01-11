@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.piwet.technologies.lafacuapp.Categories">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:choiceMode="singleChoice"
+        android:listSelector="#eee"
+        android:id="@+id/categListView"
+        android:layout_below="@+id/categTopView"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#3351fa"
+        android:id="@+id/categTopView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="44dp"
+            android:text="@string/btn_listo"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            android:id="@+id/categDoneButt"
+            android:background="@android:color/transparent"
+            android:layout_marginRight="10dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            tools:ignore="RtlHardcoded" />
+
+        <Button
+            android:text="@string/btn_cancelar"
+            android:layout_width="80dp"
+            android:layout_height="44dp"
+            android:id="@+id/categCancelButt"
+            android:textAllCaps="false"
+            android:background="@android:color/transparent"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:layout_alignBaseline="@+id/categDoneButt"
+            android:layout_alignBottom="@+id/categDoneButt"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:text="@string/elegir_categ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/textView"
+            android:textSize="20sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center_vertical"
+            android:textAlignment="center"
+            android:textStyle="normal|bold"
+            android:textColor="#fff"
+            tools:ignore="RelativeOverlap" />
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.piwet.technologies.lafacuapp.PublishActivity">
+
+    <RelativeLayout
+        android:id="@+id/accTopView"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#334afa">
+
+        <Button
+            android:id="@+id/btn_publish"
+            android:layout_width="80dp"
+            android:layout_height="44dp"
+            android:layout_alignParentEnd="true"
+            android:text="@string/publicar_btn"
+            android:background="@android:color/transparent"
+            android:textColor="@android:color/white"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            />
+
+        <TextView
+            android:id="@+id/accUsernameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:text="@string/agregar_asignatura"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            tools:ignore="RelativeOverlap" />
+
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="ScrollViewSize">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="800dp"
+                tools:ignore="UselessParent">
+
+                <EditText
+                    android:id="@+id/editTextTitulo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="78dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="@string/titulo_string"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+
+                <Button
+                    android:id="@+id/sellCategoriesButt"
+                    android:layout_width="200dp"
+                    android:layout_height="32dp"
+                    android:layout_below="@+id/editTextTitulo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/back2"
+                    android:gravity="start"
+                    android:text="@string/elegir_categ"
+                    android:textAlignment="center"
+                    android:textAllCaps="false"
+                    android:textColor="#000000"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold"
+                    tools:ignore="RtlHardcoded" />
+
+                <EditText
+                    android:id="@+id/editTextCommentarios"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/imageViewPreview"
+                    android:layout_marginTop="35dp"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:text="@string/comentarios_string" />
+
+                <Button
+                    android:id="@+id/buttonArchivo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/sellCategoriesButt"
+                    android:layout_marginStart="12dp"
+                    android:drawableStart="@drawable/attach"
+                    android:background="@android:color/white"
+                    android:layout_marginTop="31dp"
+                    android:text="@string/mi_archivo" />
+
+                <Button
+                    android:id="@+id/buttonImagen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/buttonArchivo"
+                    android:layout_alignBottom="@+id/buttonArchivo"
+                    android:drawableStart="@drawable/img"
+                    android:background="@android:color/white"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/mi_imagen" />
+
+                <Button
+                    android:id="@+id/buttonEnlace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/buttonImagen"
+                    android:layout_alignBottom="@+id/buttonImagen"
+                    android:layout_marginStart="25dp"
+                    android:layout_toEndOf="@+id/imageViewPreview"
+                    android:background="@android:color/white"
+                    android:drawableStart="@drawable/link"
+                    android:text="@string/mi_enlace" />
+
+                <ImageView
+                    android:id="@+id/imageViewPreview"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/buttonImagen"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="19dp"
+                    app:srcCompat="@drawable/add_image" />
+
+                <Button
+                    android:id="@+id/btn_cancelar"
+                    android:layout_width="80dp"
+                    android:layout_height="44dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignStart="@+id/buttonArchivo"
+                    android:layout_marginTop="12dp"
+                    android:background="@android:color/transparent"
+                    android:text="@string/btn_cancelar"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/editTextCommentarios"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="26dp"
+                    android:text="@string/verficar_asign" />
+
+
+            </RelativeLayout>
+
+
+    </LinearLayout>
+    </ScrollView>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/sellCategoriesLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2000dp"
+        android:background="#fff">
+
+        <ListView
+            android:id="@+id/sellCategListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/sellCategTopView"
+            android:choiceMode="singleChoice"
+            android:listSelector="#eee" />
+
+        <RelativeLayout
+            android:id="@+id/sellCategTopView"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="#334afa">
+
+
+            <Button
+                android:id="@+id/sellCategDoneButt"
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@android:color/transparent"
+                android:text="@string/btn_listo"
+                android:textAllCaps="false"
+                android:textColor="#fff"
+                android:textSize="12dp"
+                tools:ignore="RtlHardcoded,SpUsage" />
+
+            <TextView
+                android:id="@+id/sellCategTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center_vertical"
+                android:text="@string/elegir_categ"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textStyle="normal|bold"
+                tools:ignore="RelativeOverlap" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

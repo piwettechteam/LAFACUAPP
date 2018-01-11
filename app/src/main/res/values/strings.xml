@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">UNI</string>
+    <string name="facebook_app_id"></string>
+    <string name="fb_login_protocol_scheme"></string>
+    <string name="btnFacebook">Continuar con Facebook </string>
+    <string name="terms">He leido y aceptado los Terminos y Condiciones</string>
+    <string name="miperfil">Mi Perfil</string>
+    <string name="nombre_completo">Nombre Completo</string>
+    <string name="miemail">Email</string>
+    <string name="acercademi">Acerca de mi</string>
+    <string name="acercademi2">Cuéntanos sobre ti</string>
+    <string name="guardar">Guardar</string>
+    <string name="conectars">Conectarse</string>
+    <string name="miusuario">Usuario</string>
+    <string name="mipass">Contraseña</string>
+    <string name="olvida_contrasena">Olvidó su contraseña ?</string>
+    <string name="registrarse_now">Regístrate ahora!</string>
+    <string name="sign_up">Regístrate</string>
+    <string name="mi_saldo">Mi Saldo</string>
+    <string name="long_press_to_delete">Presiona largo para borrar</string>
+    <string name="notification_string">Notificacion</string>
+    <string name="buscar_uni">Buscar</string>
+    <string name="buscar_string">Busca libros, apuntes, exámenes etc</string>
+    <string name="nohayresultados">Lo sentimos, hubo un error, intente más tarde. </string>
+    <string name="no_productos">No hay apuntes publicados con ese nombre. Sé el primero en publicar y ganate diner extra . Comparte la #app con tus amigos.</string>
+    <string name="publicar_btn">Publicar</string>
+    <string name="agregar_asignatura">Nueva Asignatura</string>
+    <string name="titulo_string">Titulo</string>
+    <string name="elegir_categ">Elegir categoria</string>
+    <string name="btn_cancelar">Cancelar</string>
+    <string name="btn_listo">Listo</string>
+    <string name="comentarios_string">Comentarios (Opcional)</string>
+    <string name="mi_archivo">Archivo</string>
+    <string name="mi_imagen">Imagen</string>
+    <string name="mi_enlace">Enlace</string>
+    <string name="verficar_asign"> *** Esta asignatura será verificada dentro de las 48 horas.</string>
+    <string name="seleccionar_string">Seleccionar</string>
+
+</resources>
